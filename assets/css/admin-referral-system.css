@@ -1,0 +1,168 @@
+/* Admin Dashboard Referral System Styles */
+
+/* Dashboard Widget */
+.referral-dashboard-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.referral-dashboard-stats .stat-box {
+    background: #f8f8f8;
+    border-radius: 5px;
+    padding: 12px;
+    flex: 1;
+    min-width: 100px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.referral-dashboard-stats h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.referral-dashboard-stats .stat-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.referral-dashboard-stats .completed {
+    color: #1cc88a;
+}
+
+.referral-dashboard-stats .pending {
+    color: #f6c23e;
+}
+
+.referral-dashboard-stats .rate {
+    color: #4e73df;
+}
+
+.referral-links {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.status-completed {
+    color: #1cc88a;
+}
+
+.status-pending {
+    color: #f6c23e;
+}
+
+/* Referrals page */
+.wp-list-table mark.status-completed {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.wp-list-table mark.status-pending {
+    background-color: #fff9c4;
+    color: #ff8f00;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/* Analytics page */
+.analytics-overview {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.analytics-box {
+    flex: 1;
+    padding: 20px 15px;
+    margin: 0 10px;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+.analytics-box:first-child {
+    margin-left: 0;
+}
+
+.analytics-box:last-child {
+    margin-right: 0;
+}
+
+.analytics-box h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.analytics-box h2 {
+    font-size: 28px;
+    margin: 5px 0 0;
+}
+
+.analytics-box h2.completed {
+    color: #1cc88a;
+}
+
+.analytics-box h2.pending {
+    color: #f6c23e;
+}
+
+.conversion-rate {
+    margin-top: 20px;
+}
+
+.conversion-rate h3 {
+    margin-bottom: 10px;
+}
+
+.conversion-bar {
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.conversion-progress {
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: width 1s;
+}
+
+.analytics-columns {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.analytics-column {
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .analytics-overview {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .analytics-box {
+        margin: 0;
+    }
+    
+    .analytics-columns {
+        flex-direction: column;
+    }
+}
